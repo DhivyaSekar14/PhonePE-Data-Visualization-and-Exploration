@@ -4,10 +4,10 @@ PhonePE Data Visualization and Exploration
 This repository contains code and resources for visualizing and exploring data related to PhonePE, a digital payment platform. The purpose of this project is to gain insights into various aspects of PhonePE usage and transactions through data visualization and exploration techniques.
 
 **Table of Contents:**
-Installation
-Data
-Visualization and Exploration
-Streamlit Dashboard
+1. Installation
+2. Data
+3. Visualization and Exploration
+4. Streamlit Dashboard
 
 **Installation:**
 To run the code in this repository, you'll need Python 3.x installed on your system along with several dependencies, mysql and streamlit
