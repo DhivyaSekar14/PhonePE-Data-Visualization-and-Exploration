@@ -12,7 +12,7 @@ from PIL import Image
 sqlconnection = mysql.connector.connect(
     host='localhost',
     user='root',
-    password='12345678',
+    password='**your own **your own password****',
     database='phonepe_data'
 )
 cursor = sqlconnection.cursor(buffered=True)
@@ -326,7 +326,7 @@ def top_chart_transaction_amount(table_name):
     sqlconnection = mysql.connector.connect(
         host='localhost',
         user='root',
-        password='12345678',
+        password='**your own password**',
         database='phonepe_data'
     )
     cursor = sqlconnection.cursor(buffered=True)
@@ -384,7 +384,7 @@ def top_chart_transaction_count(table_name):
     sqlconnection = mysql.connector.connect(
         host='localhost',
         user='root',
-        password='12345678',
+        password='**your own password**',
         database='phonepe_data'
     )
     cursor = sqlconnection.cursor(buffered=True)
@@ -442,7 +442,7 @@ def top_chart_registered_user(table_name, state):
     sqlconnection = mysql.connector.connect(
         host='localhost',
         user='root',
-        password='12345678',
+        password='**your own password**',
         database='phonepe_data'
     )
     cursor = sqlconnection.cursor(buffered=True)
@@ -503,7 +503,7 @@ def top_chart_app_opens(table_name, state):
     sqlconnection = mysql.connector.connect(
         host='localhost',
         user='root',
-        password='12345678',
+        password='**your own password**',
         database='phonepe_data'
     )
     cursor = sqlconnection.cursor(buffered=True)
@@ -565,7 +565,7 @@ def top_chart_registered_users(table_name):
     sqlconnection = mysql.connector.connect(
         host='localhost',
         user='root',
-        password='12345678',
+        password='**your own password**',
         database='phonepe_data'
     )
     cursor = sqlconnection.cursor(buffered=True)
@@ -641,12 +641,12 @@ if select == "Home Page":
         st.write("****PIN Authorization****")
         st.download_button("DOWNLOAD THE APP NOW", "https://www.phonepe.com/app-download/")
     with col2:
-        st.video("D:\GUVI\projects\phonepe\PhonePe_Introduction.mp4")
+        st.video("**relative paths** (e.g., `images/phonepe_img2.jpg`)")
 
     col3,col4= st.columns(2)
     
     with col3:
-        st.image(Image.open(r"D:\GUVI\projects\phonepe\phonepe_img2.jpg"), width = 500)
+        st.image(Image.open(r"**relative paths** (e.g., `images/phonepe_img2.jpg`)"), width = 500)
 
     with col4:
         st.write("****Easy Transactions****")
@@ -675,7 +675,7 @@ if select == "Home Page":
         st.write("****Instantly & Free****")
 
     with col6:
-        st.image(Image.open(r"D:\GUVI\projects\phonepe\phonepe_img3.jpg"), width = 500)
+        st.image(Image.open(r"**relative paths** (e.g., `images/phonepe_img2.jpg`)"), width = 500)
 
 elif select == "Data Exploration":
     tab1, tab2, tab3 = st.tabs(["Aggregated Analysis", "Map Analysis", "Top Analysis"])
